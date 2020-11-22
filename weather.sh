@@ -3,7 +3,7 @@
 # Supposedly this will send the daily fire weather
 #
 wxcast="/usr/local/bin/wxcast"
-dir="/root/firewx"
+dir="/root/firewx-ANIMAS"
 
 cd $dir
 # Ugly-ass hack for the day of the week
@@ -26,9 +26,9 @@ elif [ $day = "Sat" ]; then
 fi
 
 # Get daily Southwest Area Fire Danger and other info from the SWCC
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/F_01_50_Daily_Fire_Danger_DISPATCH.jpg -O /var/www/html/firewx/FireDanger.jpg
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O /var/www/html/firewx/A_01_10_PREPAREDNESS_LEVEL.csv
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_01_30_Daily_RX_AZ_Website.csv -O /var/www/html/firewx/Daily_RX_AZ.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/F_01_50_Daily_Fire_Danger_DISPATCH.jpg -O /var/www/html/firewx-ANIMAS/FireDanger.jpg
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O /var/www/html/firewx-ANIMAS/A_01_10_PREPAREDNESS_LEVEL.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_02_30_Daily_RX_NM_Website.csv -O /var/www/html/firewx-ANIMAS/Daily_RX_NM.csv
 ##########################################################
 
 # REGULAR WATCHES / WARNINGS / ADVISORIES
@@ -64,8 +64,7 @@ sed -i 's/$/<br>/' pns.txt
 # Remember to just create a LINK to this file hosted on the web since there can be SO much data.
 ##########################################################
 # Get the 7 day forecast for St David
-$wxcast forecast 85630 > 7dayfcast.txt
-sed -i 's/No forecast found for location\: 85630 coordinates\: 31\.902220000000057\,\-110\.21934499999998/The NWS has no forecast available to download for Saint David\./' 7dayfcast.txt
+$wxcast forecast "Animas, NM" > 7dayfcast.txt
 sed -i 's/\:/<b>\:<\/b>/' 7dayfcast.txt
 sed -i 's/Today/<b>Today<\/b>/' 7dayfcast.txt
 sed -i 's/Tonight/<b>Tonight<\/b>/' 7dayfcast.txt
@@ -163,7 +162,7 @@ echo '</div></p>' >> DailyWeather.html
 
 # Daily Prescribed Burns
 echo '<p id="burns"><div id="shadowbox"><b>DAILY PRESCRIBED BURNS (STATEWIDE)</b></br>' >> DailyWeather.html
-cat RX_Planned_AZ.html >> DailyWeather.html
+cat RX_Planned_NM.html >> DailyWeather.html
 echo "</div></p>" >> DailyWeather.html
 
 # SWCC Daily Southwest Area Fire Danger
@@ -202,7 +201,7 @@ cat footer.html >> DailyWeather.html
 
 # Copy the report to a web page
 
-cp DailyWeather.html /var/www/html/firewx/index.html
+cp DailyWeather.html /var/www/html/firewx-ANIMAS/index.html
 ##########################################################
 
 # ASSEMBLE THE PUBLIC INFORMATION STATEMENT PAGE
@@ -220,9 +219,9 @@ cat pns.txt >> pns.html
 echo '</pre>' >> pns.html
 echo "</blockquote></div></p>" >> pns.html
 cat footer.html >> pns.html
-cp pns.html /var/www/html/firewx/pns.html
+cp pns.html /var/www/html/firewx-ANIMAS/pns.html
 
 ###########################################################
 
 # Clean up the disk space
-rm /root/firewx/*.txt
+rm /root/firewx-ANIMAS/*.txt
