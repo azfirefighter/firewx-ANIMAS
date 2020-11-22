@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SDFD Weather Update</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fire weather update for Saint David">
+	<meta name="generator" content="SDFD FWFXCAST-V02">
+	<meta name="author" content="Jason Todd">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="https://www.lltodd.family/firewx/site.webmanifest">
+	<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <style>
+        body {
+            font-family: "Verdana", sans-serif;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h6 {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        #shadowbox {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px red;
+        }
+        #header {
+            border: 1px solid;
+            padding: 10px;
+            background-color: black;
+            color: red;
+	}
+	
+	img {
+		vertical-align: middle;
+	}
+
+	.clearfix {
+		overflow: auto;
+	}
+
+        #footer {
+            border: 1px solid;
+            padding: 10px;
+            background-color: gray;
+            color: black;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333333;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          text-decoration: none;
+	  font-size: 10px;
+        }
+
+        li a:hover {
+          background-color: #111111;
+        }
+
+	.copyleft {
+		display:inline-block;
+		transform: rotate(180deg);
+}
+	}
+       </style>
+</head>
+<body>
+<div id="header"><img style="clear: left;float: left" src="https://www.lltodd.family/firewx/SDFD-trans.jpg" height="64px"><h2>SDFD Fire Weather</h2></div>
+<ul>
+    <li><a href="#Prep">Prep</a></li>
+    <li><a href="#Burns">Burns</a></li>
+    <li><a href="#dngr">DNGR</a></li>
+    <li><a href="#wwa">WWA</a></li>
+    <li><a href="#pns">PNS</a></li>
+    <li><a href="#7day">7-Day</a></li>
+    <li><a href="#awd">Area</a></li>
+    <li><a href="#zone">Zone151</a></li>
+</ul>
+<h6>Information is downloaded hourly.</br>
+</br>
+This report was generated on&nbsp;
+<font color='yellow'>Sun Nov 22 07:00:09 MST 2020</font></h6>
+<p id="prep"><div id="shadowbox"><b>WILDFIRE PREPAREDNESS LEVELS</b></br>
+<div id="prep_level"></div>
+<script type="text/javascript">
+ $.get('./A_01_10_PREPAREDNESS_LEVEL.csv', function(data) {
+	var build = '<table border="0"cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="50%">\n';
+	var rows = data.split("\n");
+	rows.forEach( function getvalues(thisRow) {
+	build += "<tr>\n";
+	var columns = thisRow.split(",");
+	for(var i=0;i<columns.length;i++){ build += "<td style: width=33%>" + columns[i] + "</td>\n"; }   			
+	build += "</tr>\n";
+	})
+	build += "</table>";
+	$('#prep_level').append(build);	
+ });</script>
+
+</div></p>
+<p id="burns"><div id="shadowbox"><b>DAILY PRESCRIBED BURNS (STATEWIDE)</b></br>
+<div id="RX_Planned_AZ"></div>
+<script type="text/javascript">
+ $.get('./Daily_RX_AZ.csv', function(data) {
+	var build = '<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0px;" width="100%" >\n';
+	var rows = data.split("\n");
+	rows.forEach( function getvalues(thisRow) {
+	build += "<tr>\n";
+	var columns = thisRow.split(",");
+	for(var i=0;i<columns.length;i++){ build += "<td style: width=11%>" + columns[i] + "</td>\n"; }   			
+	build += "</tr>\n";
+	})
+	build += "</table>";
+	$('#RX_Planned_AZ').append(build);	
+ });</script>
+</div></p>
+<p id="dngr"><div id="shadowbox"><b>SOUTHWEST AREA FIRE DANGER</b></br>
+<a href="https://www.lltodd.family/firewx/FireDanger.jpg" target="_blank"><img src="https://www.lltodd.family/firewx/FireDanger.jpg" width="25%"></a></br>
+Click to enlarge.</div></p>
+<p id="wwa"><div id="shadowbox"><b>REGULAR WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>
+<br></p>
+None.<br></p>
+</blockquote></div></p>
+<p id="pns"><div id="shadowbox"><b>PUBLIC INFORMATION STATEMENT</b></br><blockquote>
+<i>The statements can be long.  To view it, <a href="https:\\www.lltodd.family\firewx/pns.html">CLICK HERE</a></i>.
+</blockquote></div></p>
+<p id="7day"><div id="shadowbox"><b>7-DAY FORECAST</b></br><blockquote>
+       <b>Overnight</b><b>:</b>  Mostly cloudy. Low around 44, with temperatures rising to<br>
+                   around 48 overnight. Southeast wind around 6<br>
+                   mph.<br>
+          <br><b>Sunday</b><b>:</b>  Mostly sunny. High near 84, with temperatures falling to<br>
+                   around 79 in the afternoon. South southeast<br>
+                   wind 6 to 12 mph.<br>
+    <br><b>Sunday</b> <b>Night</b><b>:</b>  Partly cloudy, with a low around 43. South southeast wind<br>
+                   around 9 mph.<br>
+          <br><b>Monday</b><b>:</b>  Mostly sunny, with a high near 78. South wind 7 to 21<br>
+                   mph.<br>
+    <br><b>Monday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 36. Southwest wind 7 to 14<br>
+                   mph.<br>
+         <br><b>Tuesday</b><b>:</b>  Sunny, with a high near 70.<br>
+   <br><b>Tuesday</b> <b>Night</b><b>:</b>  Clear, with a low around 32.<br>
+       <br><b>Wednesday</b><b>:</b>  Sunny, with a high near 73.<br>
+ <br><b>Wednesday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 33.<br>
+<b>Thanksgiving</b <b>Day</b><b>:</b>  Sunny, with a high near 72.<br>
+  <br><b>Thursday</b> <b>Night</b><b>:</b>  Widespread frost after 3am. Mostly clear, with a low around<br>
+                   33.<br>
+          <br><b>Friday</b><b>:</b>  Widespread frost before 8am. Sunny, with a high near 64.<br>
+    <br><b>Friday</b> <b>Night</b><b>:</b>  Widespread frost after 3am. Mostly clear, with a low around<br>
+                   28.<br>
+        <br><b>Saturday</b><b>:</b>  Widespread frost before 8am. Sunny, with a high near 62.<br>
+</blockquote></div></p>
+<p id="awd"><div id="shadowbox"><b>AREA DISCUSSION</b></br><blockquote>
+
+
+<p><b>SYNOPSIS</b><br>Temperatures will continue well above average to start
+the new week. A weather system brushing by to our north will bring
+some cooling Tuesday with another system bringing additional
+cooling Friday. Breezy at times with these systems, but precip
+chances are low for the southeast corner of the state..
+
+</p>
+
+</p><p><b>DISCUSSION</b><br>One more day with near record afternoon highs as a
+shortwave ridge phases with the northern remains of the strong
+high pressure now anchored in Mexico. A trough will push through
+the region Monday with most of the cooling in SE AZ trailing the
+rest of the state into Tuesday. Breezy conditions but limited
+moisture this far south.
+
+A shortwave ridge Wednesday will push temperatures up a few
+degrees, but a deeper split in the flow later in the week will not
+give much time to warm up again. Ensembles argue for a significant
+weakness over the desert southwest late next week. Much cooler
+temperatures a sure bet, falling below seasonal averages for a 
+brief period Friday through next weekend. Gusty winds at times,
+but a split with a dry inland trajectory like this one looks to 
+be usually doesn't have time to tap into much moisture. As long as
+it doesn't get cut off and left behind, precip chances will again
+be minimal this far south.
+
+</p>
+
+
+
+
+</blockquote></div></p>
+<p id="zone"><div id="shadowbox"><b>ZONE 151 FORECAST</b></br><blockquote>
+<br>
+<b>TODAY</b><br>
+* Sky/Weather..............Mostly cloudy then becoming partly <br>
+  cloudy. <br>
+* Max Temperature..........76 to 86 degs. <br>
+*    24 hr Trend...........Little change. <br>
+* Min Humidity.............16 to 26 pct. <br>
+*    24 hr Trend...........Down 3 to 7 pct. <br>
+* Wind (20 ft/10-min avg)..Southeast around 10 mph. <br>
+* 10000 ft MSL Wind........South 10 to 15 mph. <br>
+* Chance of Precip.........0 pct. <br>
+* LAL......................1. <br>
+* Haines Index.............5 or moderate. <br>
+* Mixing Height............6007 ft agl. <br>
+* Transport Winds..........Southeast 9 to 11 knots. <br>
+* Ventilation Category.....Good (66077 knot-ft). <br>
+<br>
+<b>TONIGHT</b><br>
+* Sky/Weather..............Partly cloudy. <br>
+* Min Temperature..........44 to 54 degs. <br>
+*    24 hr Trend...........Down 1 to 4 degs. <br>
+* Max Humidity.............61 to 71 pct. <br>
+*    24 hr Trend...........Up 3 to 6 pct. <br>
+* Wind (20 ft/10-min avg)..South around 10 mph. <br>
+* 10000 ft MSL Wind........South around 20 mph increasing to around <br>
+  30 mph after midnight. <br>
+* Chance of Precip.........0 pct. <br>
+* LAL......................1. <br>
+* Haines Index.............4 or low. <br>
+<br>
+<b>MONDAY</b><br>
+* Sky/Weather..............Partly cloudy. <br>
+* Max Temperature..........69 to 79 degs. <br>
+*    24 hr Trend...........Down 5 to 9 degs. <br>
+* Min Humidity.............17 to 27 pct. <br>
+*    24 hr Trend...........Little change. <br>
+* Wind (20 ft/10-min avg)..South 15 to 20 mph. <br>
+* 10000 ft MSL Wind........Southwest 30 to 35 mph. <br>
+* Chance of Precip.........0 pct. <br>
+* LAL......................1. <br>
+* Haines Index.............4 or low. <br>
+* Mixing Height............6134 ft agl. <br>
+* Transport Winds..........South 20 knots increasing to southwest <br>
+  31 knots in the afternoon. <br>
+* Ventilation Category.....Excellent (190154 knot-ft). <br>
+<br>
+</blockquote></div></p>
+<div id="footer">
+<footer>
+    Produced using the <a href="https://github.com/smarlowucf/wxcast">wxcast Python library</a> by <a href=https://github.com/smarlowucf" target="_blank">Sean Marlow</a> and is licensed under the <a href="https://raw.githubusercontent.com/smarlowucf/wxcast/master/LICENSE" target=_blank">MIT License</a>.<br>
+    Script and web page provided under the <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" target="_blank">GNU GPL 3.0</a>.<br>
+    SW Area Fire Danger, Daily RX Burns and Wildfire Preparedness provided by the <a href="https://gacc.nifc.gov/swcc/index.htm" target="_blank">Southwest Coordination Center</a>.</br>
+    <span class="copyleft">&copy;</span> Copyleft 2019 by <a href="https://github.com/azfirefighter" target="_blank">Jason Todd</a>.
+</footer>
+</div>
+</body>
+</html>
