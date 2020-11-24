@@ -10,9 +10,11 @@ It is also currently used (in modified form) by the [Saint David Fire Distict](h
 
 1. Install by issuing "sudo pip3 install wxcast" on the command line.
 2. Set the required variables in the config file
-3. Use crontab -e to set the frequency the script will be ran.
+3. Copy your department's logo to the webhome directory.
+4. Copy the LICENSE file to the webhome directory.
+5. Use crontab -e to set the frequency the script will be ran.
    It is recommended to run it at least every hour.
-4. Use crontab -e to set when to send the email reminder.
+6. Use crontab -e to set when to send the email reminder.
    I send it out once per day.
 
 >To make the script usable for you, you're going to need to do some research as to URLS for the fire danger, preparedness levels and
