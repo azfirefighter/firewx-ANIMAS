@@ -58,7 +58,6 @@ sed -i '$d' wwa-raw.txt
 sed -i '$d' wwa-raw.txt
 sed -i 's/NM\.\.\.//' wwa-raw.txt
 cp wwa-raw.txt wwa.txt
-echo -e "<br></p>" >> wwa.txt
 ##########################################################
 
 # Get the 7 day forecast for Animas
