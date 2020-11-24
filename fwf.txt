@@ -1,0 +1,57 @@
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.TONIGHT...
+* Sky/weather.........Mostly clear (5-15 percent). 
+* Min temperature.....29-34. 
+*    24 hr trend......10 degrees cooler. 
+* Max humidity........55-60 percent. 
+*    24 hr trend......1 percent drier. 
+* 20-foot winds.......Northwest winds around 15 mph decreasing to 
+                      around 5 mph after midnight. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....64-69. 
+*    24 hr trend......3 degrees warmer. 
+* Min humidity........13-17 percent. 
+*    24 hr trend......2 percent drier. 
+* 20-foot winds.......Southwest winds 5 to 10 mph. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1100 ft AGL increasing to 3800 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Fair (59600 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature.....32-37. 
+* Max humidity........52-57 percent. 
+* 20-foot winds.......West winds around 5 mph. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....64-68. 
+* Min humidity........13-17 percent. 
+* 20-foot winds.......West winds around 10 mph. 
+* 10000 ft MSL winds..West 24 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1200 ft AGL increasing to 4600 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Good (93000 knot-ft). 
+
+

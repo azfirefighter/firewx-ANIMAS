@@ -1,0 +1,21 @@
+#
+# LIMITED configuration file
+#
+
+# set from to the address that SENDS the email
+from="weather-noreply@host.ext"
+
+# set email to the address that GETS the email
+email="user@host.ext"
+
+# set wxcast to the full path to the wxcast program
+wxcast=/usr/local/bin/wxcast
+
+# set dir to the directory that the script runs in
+dir=/root/firewx-ANIMAS
+
+# set webhome to the web host path you want to serve from
+webhome=/var/www/html/firewx-ANIMAS
+
+# set url to the actual website address
+url="https://www.lltodd.family/firewx-ANIMAS"

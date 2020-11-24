@@ -1,7 +1,5 @@
 #!/bin/bash
-url=""
-email=""
-from=""
+source ./config
 
 logger "Emailing morning fire weather briefing."
 

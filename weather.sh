@@ -22,10 +22,7 @@
 #    I send it out once per day.                                        #
 #########################################################################
 
-wxcast="/usr/local/bin/wxcast"
-dir="/root/firewx-ANIMAS"
-webhome="/var/www/html/firewx-ANIMAS"
-
+source ./config
 cd $dir
 # Ugly-ass hack for the day of the week
 day=$(date | head -c 3)
@@ -59,7 +56,8 @@ sed -i '/TX\.\.\./,/$/d' wwa-raw.txt
 sed -i '1d' wwa-raw.txt
 sed -i '$d' wwa-raw.txt
 sed -i '$d' wwa-raw.txt
-sed 's/NM\.\.\.//' wwa-raw.txt > wwa.txt
+sed -i 's/NM\.\.\.//' wwa-raw.txt
+cp wwa-raw.txt wwa.txt
 echo -e "<br></p>" >> wwa.txt
 ##########################################################
 
@@ -118,18 +116,35 @@ $wxcast text EPZ FWF > fwf-raw.txt
 sed -n '/NMZ111/,/$$/p' fwf-raw.txt > fwf.txt
 sed -i '/NMZ/,/2020/d' fwf.txt
 sed -i '/.FORECAST DAYS 3 THROUGH 5.../,$d' fwf.txt
-sed -n '/\.Today\.\.\./,/$^/p' fwf.txt > zone111.txt
+#sed -n '/\.Today\.\.\./,/$^/p' fwf.txt > zone111.txt
+cp fwf.txt zone111.txt
 sed -i '$d' zone111.txt
 sed -i '$d' zone111.txt
-sed -i 's/.Today.../<b>TODAY<\/b>/' zone111.txt
-sed -i 's/.TONIGHT.../<b>TONIGHT<\/b>/' zone111.txt
-sed -i 's/.SUNDAY.../<b>SUNDAY<\/b>/' zone111.txt
-sed -i 's/.MONDAY.../<b>MONDAY<\/b>/' zone111.txt
-sed -i 's/.TUESDAY.../<b>TUESDAY<\/b>/' zone111.txt
-sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone111.txt
-sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone111.txt
-sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone111.txt
-sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone111.txt
+sed -i 's/Today/<b>TODAY<\/b>/' zone111.txt
+sed -i 's/TODAY/<b>TODAY<\/b>/' zone111.txt
+sed -i 's/TONIGHT/<b>TONIGHT<\/b>/' zone111.txt
+sed -i 's/NIGHT/<b>NIGHT<\/b>/' zone111.txt
+sed -i 's/VETERANS DAY/<b>VETERANS DAY<\/b>/' zone111.txt
+sed -i 's/MEMORIAL DAY/<b>MEMORIAL DAY<\/b>/' zone111.txt
+sed -i 's/LABOR DAY/<b>LABOR DAY<\/b>/' zone111.txt
+sed -i 's/COLUMBUS DAY/<b>COLUMBUS DAY<\/b>/' zone111.txt
+sed -i 's/PRESIDENTS DAY/<b>PRESIDENTS DAY<\/b>/' zone111.txt
+sed -i 's/NEW YEARS DAY/<b>NEW YEARS DAY<\/b>/' zone111.txt
+sed -i 's/NEW YEAR/<b>NEW YEAR<\/b>/' zone111.txt
+sed -i 's/INDEPENDENCE DAY/<b>INDEPENDENCE DAY<\/b>/' zone111.txt
+sed -i 's/INAUGUARATION DAY/<b>INAUGURATION DAY<\/b>/' zone111.txt
+sed -i 's/VALENTINE DAY/<b>VALENTINE DAY<\/b>/' zone111.txt
+sed -i 's/HALLOWEEN/<b>HALLOWEEN<\/b>/' zone111.txt
+sed -i 's/EASTER/<b>EASTER<\/b>/' zone111.txt
+sed -i 's/THANKSGIVING DAY/<b>THANKSGIVING DAY<\/b>/' zone111.txt
+sed -i 's/CHRISTMAS/<b>CHRISTMAS<\/b>/' zone111.txt
+sed -i 's/SUNDAY/<b>SUNDAY<\/b>/' zone111.txt
+sed -i 's/MONDAY/<b>MONDAY<\/b>/' zone111.txt
+sed -i 's/TUESDAY/<b>TUESDAY<\/b>/' zone111.txt
+sed -i 's/WEDNESDAY/<b>WEDNESDAY<\/b>/' zone111.txt
+sed -i 's/THURSDAY/<b>THURSDAY<\/b>/' zone111.txt
+sed -i 's/FRIDAY/<b>FRIDAY<\/b>/' zone111.txt
+sed -i 's/SATURDAY/<b>SATURDAY<\/b>/' zone111.txt
 #sed -i 's/.FORECAST DAYS 3 THROUGH 5.../<b>FORECAST DAYS 3 THROUGH 5<\/b>/' zone111.txt
 sed -i 's/$/<br>/' zone111.txt
 ##########################################################

@@ -1,0 +1,502 @@
+
+000
+FNUS54 KEPZ 242105
+FWFEPZ
+
+Fire Weather Planning Forecast for New Mexico and Far West Texas
+National Weather Service El Paso TX/Santa Teresa NM
+205 PM MST Tue Nov 24 2020
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.DISCUSSION...
+Upper-level storm system rapidly departs the region this evening
+to allow for a quick slackening in the winds at and after sunset.
+Drier and cooler air moves in overnight on lighter northwest
+winds. A chilly night, with lows down to near average. The rest 
+of the week will be dry and mostly clear. Temperatures will be
+slightly warmer than seasonal normals. Afternoons will be 
+slightly breezy due to surface troughing to our east. Minimum RH 
+will be in the teens across the lowlands through Thursday. Another
+storm drops in on Friday, but it appears mostly dry, and looks to
+only bring cooler air behind a cold front which pushes in from 
+the north. Vent rates mostly fair due to the lighter winds and 
+limited mixing heights.
+
+&&
+
+...Percentages shown in the sky/weather portion reflect
+sky cover amount...
+
+...Mean elevations used to obtain mixing heights as follows:
+Zone 110 - Reserve   (5900 ft)
+Zone 111 - Deming    (4300 ft)
+Zone 112 - Las Cruces(3900 ft)
+Zone 113 - Ruidoso   (6900 ft)
+
+Ventilation categories are determined by criteria established
+by the state of New Mexico.
+
+
+
+
+NMZ110-251230-
+NEW MEXICO FIRE WEATHER ZONE 110 
+ SOUTHWEST MOUNTAINS/GILA NF/APACHE NF/GLZ-
+205 PM MST Tue Nov 24 2020
+
+.TONIGHT...
+* Sky/weather.........Mostly clear (15-25 percent). 
+* Min temperature..... 
+*    Above 7500 ft....22-27. 
+*    Below 7500 ft....26-31. 
+*    24 hr trend......8 degrees cooler. 
+* Max humidity........ 
+*    Above 7500 ft....56-61 percent. 
+*    Below 7500 ft....54-59 percent. 
+*    24 hr trend......16 percent drier. 
+* 20-foot winds.......Northwest winds 10 to 15 mph. 
+* 10000 ft MSL winds..West 18 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Mostly sunny (5-15 percent). 
+* Max temperature..... 
+*    Above 7500 ft....49-54. 
+*    Below 7500 ft....57-62. 
+*    24 hr trend......3 degrees warmer. 
+* Min humidity........ 
+*    Above 7500 ft....13-17 percent. 
+*    Below 7500 ft....12-16 percent. 
+*    24 hr trend......9 percent drier. 
+* 20-foot winds.......Southwest winds 5 to 10 mph. 
+* 10000 ft MSL winds..West 21 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1100 ft AGL increasing to 3200 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Fair (51100 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature..... 
+*    Above 7500 ft....27-32. 
+*    Below 7500 ft....31-36. 
+* Max humidity........ 
+*    Above 7500 ft....44-49 percent. 
+*    Below 7500 ft....44-49 percent. 
+* 20-foot winds.......West winds around 10 mph. 
+* 10000 ft MSL winds..West 24 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature..... 
+*    Above 7500 ft....47-52. 
+*    Below 7500 ft....56-61. 
+* Min humidity........ 
+*    Above 7500 ft....19-24 percent. 
+*    Below 7500 ft....15-19 percent. 
+* 20-foot winds.......West winds around 10 mph. 
+* 10000 ft MSL winds..West 25 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........3. 
+* Mixing height.......1200 ft AGL increasing to 4300 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Fair (59500 knot-ft). 
+
+
+.FORECAST DAYS 3 THROUGH 5...
+.FRIDAY...Mostly clear with slight chance of snow. Lows in the
+upper 20s. Highs in the upper 40s. Northwest winds around 5 mph. 
+.SATURDAY...Mostly clear. Lows in the mid 20s. Highs in the upper
+40s. North winds around 5 mph. 
+.SUNDAY...Clear. Lows in the mid 20s. Highs in the mid 50s. North
+winds around 5 mph. 
+
+$$
+
+NMZ111-251230-
+NEW MEXICO FIRE WEATHER ZONE 111 
+ SOUTHWEST DESERTS AND LOWLANDS/LAS CRUCES BLM/GLZ-
+205 PM MST Tue Nov 24 2020
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.TONIGHT...
+* Sky/weather.........Mostly clear (5-15 percent). 
+* Min temperature.....29-34. 
+*    24 hr trend......10 degrees cooler. 
+* Max humidity........55-60 percent. 
+*    24 hr trend......1 percent drier. 
+* 20-foot winds.......Northwest winds around 15 mph decreasing to 
+                      around 5 mph after midnight. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....64-69. 
+*    24 hr trend......3 degrees warmer. 
+* Min humidity........13-17 percent. 
+*    24 hr trend......2 percent drier. 
+* 20-foot winds.......Southwest winds 5 to 10 mph. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1100 ft AGL increasing to 3800 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Fair (59600 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature.....32-37. 
+* Max humidity........52-57 percent. 
+* 20-foot winds.......West winds around 5 mph. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....64-68. 
+* Min humidity........13-17 percent. 
+* 20-foot winds.......West winds around 10 mph. 
+* 10000 ft MSL winds..West 24 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1200 ft AGL increasing to 4600 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Good (93000 knot-ft). 
+
+
+.FORECAST DAYS 3 THROUGH 5...
+.FRIDAY...Mostly clear. Lows in the lower 30s. Highs in the upper
+50s. West winds around 5 mph. 
+.SATURDAY...Clear. Lows in the upper 20s. Highs in the upper 50s.
+Northeast winds around 5 mph. 
+.SUNDAY...Clear. Lows in the mid 20s. Highs around 60. Northeast
+winds around 5 mph. 
+
+$$
+
+NMZ112-251230-
+NEW MEXICO FIRE WEATHER ZONE 112 
+ SOUTH CENTRAL LOWLANDS AND SOUTHERN RIO GRANDE VALLEY/BLM/GLZ-
+205 PM MST Tue Nov 24 2020
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.TONIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature.....30-35. 
+*    24 hr trend......12 degrees cooler. 
+* Max humidity........55-60 percent. 
+*    24 hr trend......Unchanged. 
+* 20-foot winds.......Northwest winds around 20 mph decreasing to 
+                      around 5 mph after midnight. 
+* 10000 ft MSL winds..West 23 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Sunny (5-15 percent). 
+* Max temperature.....61-66. 
+*    24 hr trend......1 degree warmer. 
+* Min humidity........14-16 percent. 
+*    24 hr trend......1 percent drier. 
+* 20-foot winds.......Southwest winds 5 to 10 mph. 
+* 10000 ft MSL winds..West 26 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........5. 
+* Mixing height.......1100 ft AGL increasing to 3600 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 15 knots. 
+* Vent category.......Fair (56800 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature.....34-39. 
+* Max humidity........46-51 percent. 
+* 20-foot winds.......Southwest winds 5 to 10 mph. 
+* 10000 ft MSL winds..West 28 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....64-69. 
+* Min humidity........14-16 percent. 
+* 20-foot winds.......Southwest winds around 10 mph. 
+* 10000 ft MSL winds..West 28 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1100 ft AGL increasing to 4000 ft AGL in the 
+                      afternoon. 
+* Transport winds.....Southwest around 15 knots. 
+* Vent category.......Fair (57100 knot-ft). 
+
+
+.FORECAST DAYS 3 THROUGH 5...
+.FRIDAY...Cooler. Mostly clear. Lows in the mid 30s. Highs in the
+upper 50s. Southwest winds around 5 mph. 
+.SATURDAY...Mostly clear. Lows in the upper 20s. Highs in the mid
+50s. North winds around 5 mph. 
+.SUNDAY...Clear. Lows in the upper 20s. Highs in the upper 50s.
+North winds around 5 mph. 
+
+$$
+
+NMZ113-251230-
+NEW MEXICO FIRE WEATHER ZONE 113 
+ CAPITAN AND SACRAMENTO MOUNTAINS/LINCOLN NF/LNZ-
+205 PM MST Tue Nov 24 2020
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.TONIGHT...
+* Sky/weather.........Mostly clear (15-25 percent). 
+* Min temperature..... 
+*    Above 7500 ft....21-26. 
+*    Below 7500 ft....26-31. 
+*    24 hr trend......12 degrees cooler. 
+* Max humidity........ 
+*    Above 7500 ft....65-70 percent. 
+*    Below 7500 ft....61-66 percent. 
+*    24 hr trend......Unchanged. 
+* 20-foot winds.......Breezy. West winds around 25 mph becoming 
+                      northwest around 10 mph after midnight. 
+* 10000 ft MSL winds..West 28 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Sunny (5-15 percent). 
+* Max temperature..... 
+*    Above 7500 ft....46-51. 
+*    Below 7500 ft....54-59. 
+*    24 hr trend......3 degrees warmer. 
+* Min humidity........ 
+*    Above 7500 ft....18-22 percent. 
+*    Below 7500 ft....15-19 percent. 
+*    24 hr trend......9 percent drier. 
+* 20-foot winds.......West winds 10 to 15 mph. 
+* 10000 ft MSL winds..West 25 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1200 ft AGL increasing to 3200 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 20 knots. 
+* Vent category.......Good (74700 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature..... 
+*    Above 7500 ft....28-33. 
+*    Below 7500 ft....33-38. 
+* Max humidity........ 
+*    Above 7500 ft....50-55 percent. 
+*    Below 7500 ft....41-46 percent. 
+* 20-foot winds.......West winds around 15 mph. 
+* 10000 ft MSL winds..West 35 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature..... 
+*    Above 7500 ft....48-53. 
+*    Below 7500 ft....56-61. 
+* Min humidity........ 
+*    Above 7500 ft....21-26 percent. 
+*    Below 7500 ft....16-20 percent. 
+* 20-foot winds.......West winds around 15 mph. 
+* 10000 ft MSL winds..West 32 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........3. 
+* Mixing height.......1300 ft AGL increasing to 4300 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 20 knots. 
+* Vent category.......Good (72700 knot-ft). 
+
+
+.FORECAST DAYS 3 THROUGH 5...
+.FRIDAY...Colder. Mostly clear with slight chance of rain and
+snow. Lows in the upper 20s. Highs in the mid 40s. East winds
+around 10 mph. 
+.SATURDAY...Mostly clear. Slight chance of rain and snow. Lows in
+the mid 20s. Highs in the upper 40s. Northeast winds around
+5 mph. 
+.SUNDAY...Clear. Lows in the upper 20s. Highs in the upper 40s.
+North winds around 10 mph. 
+
+$$
+
+TXZ055-251230-
+TEXAS FIRE WEATHER ZONE 055 
+ EL PASO COUNTY-
+205 PM MST Tue Nov 24 2020
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.TONIGHT...
+* Sky/weather.........Clear (5-15 percent). 
+* Min temperature.....36-40. 
+*    24 hr trend......12 degrees cooler. 
+* Max humidity........40-45 percent. 
+*    24 hr trend......4 percent drier. 
+* 20-foot winds.......West winds around 20 mph becoming north 
+                      around 5 mph after midnight. 
+* 10000 ft MSL winds..West 26 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Sunny (5-15 percent). 
+* Max temperature.....65-69. 
+*    24 hr trend......1 degree warmer. 
+* Min humidity........14-16 percent. 
+*    24 hr trend......1 percent drier. 
+* 20-foot winds.......Southeast winds around 5 mph shifting to the 
+                      southwest in the afternoon. 
+* 10000 ft MSL winds..West 25 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1000 ft AGL increasing to 3500 ft AGL in the 
+                      afternoon. 
+* Transport winds.....Southwest around 10 knots. 
+* Vent category.......Fair (43900 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature.....38-43. 
+* Max humidity........45-50 percent. 
+* 20-foot winds.......Southwest winds around 5 mph. 
+* 10000 ft MSL winds..West 24 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....67-71. 
+* Min humidity........14-16 percent. 
+* 20-foot winds.......Southwest winds 5 to 10 mph. 
+* 10000 ft MSL winds..West 24 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1000 ft AGL increasing to 3600 ft AGL in the 
+                      afternoon. 
+* Transport winds.....Southwest around 10 knots. 
+* Vent category.......Poor (37000 knot-ft). 
+
+
+.FORECAST DAYS 3 THROUGH 5...
+.FRIDAY...Mostly clear. Lows in the lower 40s. Highs in the lower
+60s. South winds around 5 mph. 
+.SATURDAY...Mostly clear. Lows in the mid 30s. Highs in the upper
+50s. Northeast winds around 5 mph. 
+.SUNDAY...Clear. Lows in the lower 30s. Highs around 60.
+Northwest winds around 5 mph. 
+
+$$
+
+TXZ056-251230-
+TEXAS FIRE WEATHER ZONE 056 
+ HUDSPETH COUNTY-
+205 PM MST Tue Nov 24 2020
+
+...WIND ADVISORY IN EFFECT UNTIL 5 PM MST THIS AFTERNOON...
+
+.TONIGHT...
+* Sky/weather.........Clear (0-10 percent). 
+* Min temperature.....34-39. 
+*    24 hr trend......12 degrees cooler. 
+* Max humidity........44-49 percent. 
+*    24 hr trend......11 percent drier. 
+* 20-foot winds.......Windy. West winds around 30 mph decreasing to 
+                      around 10 mph after midnight. 
+* 10000 ft MSL winds..West 33 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+
+.WEDNESDAY...
+* Sky/weather.........Sunny (5-15 percent). 
+* Max temperature.....66-71. 
+*    24 hr trend......1 degree warmer. 
+* Min humidity........13-17 percent. 
+*    24 hr trend......1 percent drier. 
+* 20-foot winds.......Southwest winds around 10 mph. 
+* 10000 ft MSL winds..West 26 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........4. 
+* Mixing height.......1200 ft AGL increasing to 4100 ft AGL in the 
+                      afternoon. 
+* Transport winds.....Southwest around 15 knots. 
+* Vent category.......Good (70600 knot-ft). 
+
+.WEDNESDAY NIGHT...
+* Sky/weather.........Mostly clear (10-20 percent). 
+* Min temperature.....38-43. 
+* Max humidity........45-50 percent. 
+* 20-foot winds.......Southwest winds around 10 mph. 
+* 10000 ft MSL winds..West 26 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........5. 
+
+.THANKSGIVING DAY...
+* Sky/weather.........Mostly sunny (10-20 percent). 
+* Max temperature.....67-72. 
+* Min humidity........12-16 percent. 
+* 20-foot winds.......West winds 10 to 15 mph. 
+* 10000 ft MSL winds..West 26 mph. 
+* Chc of precip.......0 percent. 
+* LAL.................1. 
+* Haines index........5. 
+* Mixing height.......1200 ft AGL increasing to 4200 ft AGL in the 
+                      afternoon. 
+* Transport winds.....West around 20 knots. 
+* Vent category.......Good (67200 knot-ft). 
+
+
+.FORECAST DAYS 3 THROUGH 5...
+.FRIDAY...Cooler. Mostly clear. Lows in the upper 30s. Highs in
+the upper 50s. North winds around 5 mph. 
+.SATURDAY...Mostly clear. Lows in the lower 30s. Highs in the mid
+50s. Northeast winds around 5 mph. 
+.SUNDAY...Clear. Lows around 30. Highs in the upper 50s.
+Northwest winds around 5 mph. 
+
+$$
+
+Bird
+
