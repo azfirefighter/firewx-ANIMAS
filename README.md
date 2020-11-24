@@ -9,7 +9,7 @@ It is also currently used (in modified form) by the [Saint David Fire Distict](h
 >This script requires the wxcast Python3 library and requires some configuration and the use of crontab and the mail commands.
 
 **For some reason, the NWS has issues with their 7-day forecast feed, causing a "No forecast found" message
-to be returned.  This is a KNOWN issue and the NWS has no plans to fix it. **
+to be returned.  This is a KNOWN issue and the NWS has no plans to fix it.**
 
 1. Install by issuing "sudo pip3 install wxcast" on the command line.
 2. Set the required variables in the config file
