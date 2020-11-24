@@ -1,9 +1,30 @@
 #!/bin/sh
 #
-# Supposedly this will send the daily fire weather
+# Fire Weather Forecast for Animas, NM
 #
+# This script is licensed under the GPL 3.0 and may
+# be modified and shared provided the original author
+# is credited by leaving the footer.html as-is.
+#
+
+#########################################################################
+#        This script requires the wxcast Python3 library.               #
+# 1. Install by issuing "sudo pip3 install wxcast" on the command line. #
+# 2. Set the wxcast variable to the path for wxcast.                    #
+# 3. Set the dir variable to the directory this script and its files    #
+#    are in.                                                            #
+# 4. Set the webhome variable to the directory on your web server where #
+#    the page will be accessed.                                         #
+# 5. Use crontab -e to set the frequency the script will be ran.        #
+#    It is recommended to run it at least every hour.                   #
+# 6. Edit send-mail.sh to the correct email address.                    #
+# 7. Use crontab -e to set when to send the email reminder.             #
+#    I send it out once per day.                                        #
+#########################################################################
+
 wxcast="/usr/local/bin/wxcast"
 dir="/root/firewx-ANIMAS"
+webhome="/var/www/html/firewx-ANIMAS"
 
 cd $dir
 # Ugly-ass hack for the day of the week
@@ -32,38 +53,17 @@ wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWC
 ##########################################################
 
 # REGULAR WATCHES / WARNINGS / ADVISORIES
-$wxcast text TWC AFD > afd-raw.txt
-cp afd-raw.txt wwa-raw.txt
-sed -n '9,$p' < wwa-raw.txt > wwa-step2.txt
-sed -i '/.SYNOPSIS/,/&&/d' wwa-step2.txt
-sed -i '/.DISCUSSION/,/&&/d' wwa-step2.txt
-sed -i '/.AVIATION/,/&&/d' wwa-step2.txt
-sed -i '/.FIRE WEATHER/,/&&/d' wwa-step2.txt
-sed -n '6,$p' < wwa-step2.txt > wwa.txt
-sed -i '$d' wwa.txt
-sed -i '$d' wwa.txt
-sed -i '$d' wwa.txt
-sed -i '$d' wwa.txt
-sed -i '$d' wwa.txt
-sed -i '$d' wwa.txt
-sed -i '$d' wwa.txt
-sed -i '/^$/d' wwa.txt
-sed -i '/^\&\&/,$d' wwa.txt
-#sed -i '/^.TWC WATCHES\/WARNINGS\/ADVISORIES.../d' wwa.txt
-sed -i 's/.TWC WATCHES\/WARNINGS\/ADVISORIES...//' wwa.txt
-sed -i 's/$/<br><\/p>/' wwa.txt
+$wxcast text EPZ AFD > afd-raw.txt
+sed -n '/\.EPZ/,/&&/p' afd-raw.txt > wwa-raw.txt
+sed -i '/TX\.\.\./,/$/d' wwa-raw.txt
+sed -i '1d' wwa-raw.txt
+sed -i '$d' wwa-raw.txt
+sed -i '$d' wwa-raw.txt
+sed 's/NM\.\.\.//' wwa-raw.txt > wwa.txt
+echo -e "<br></p>" >> wwa.txt
 ##########################################################
 
-# PUBLIC INFORMATION STATEMENT
-$wxcast text TWC PNS > pns-raw.txt
-cat pns-raw.txt | sed -n '6,$p' > pns.txt
-sed -i '$d' pns.txt
-sed -i '$d' pns.txt
-sed -i 's/$/<br>/' pns.txt
-
-# Remember to just create a LINK to this file hosted on the web since there can be SO much data.
-##########################################################
-# Get the 7 day forecast for St David
+# Get the 7 day forecast for Animas
 $wxcast forecast "Animas, NM" > 7dayfcast.txt
 sed -i 's/\:/<b>\:<\/b>/' 7dayfcast.txt
 sed -i 's/Today/<b>Today<\/b>/' 7dayfcast.txt
@@ -73,7 +73,6 @@ sed -i 's/This/<b>This<\/b>/' 7dayfcast.txt
 sed -i 's/Thru/<b>Thru<\/b>/' 7dayfcast.txt
 sed -i 's/Afternoon/<b>Afternoon<\/b>/' 7dayfcast.txt
 sed -i 's/Evening/<b>Evening<\/b>/' 7dayfcast.txt
-#sed -i 's/Over/<b>Over<\/b>/' 7dayfcast.txt
 sed -i 's/Overnight/<b>Overnight<\/b>/' 7dayfcast.txt
 sed -i 's/Day/<b>Day<\/b>/' 7dayfcast.txt
 sed -i 's/Night/<b>Night<\/b>/' 7dayfcast.txt
@@ -93,7 +92,7 @@ sed -i 's/Valentines/<b>Valentines<\/b/' 7dayfcast.txt
 sed -i 's/New Year/<b>New Year<\/b/' 7dayfcast.txt
 sed -i 's/Halloween/<b>Halloween<\/b/' 7dayfcast.txt
 sed -i 's/Easter/<b>Easter<\/b/' 7dayfcast.txt
-sed -i 's/Thanksgiving/<b>Thanksgiving<\/b/' 7dayfcast.txt
+sed -i 's/Thanksgiving Day/<b>Thanksgiving Day<\/b/' 7dayfcast.txt
 sed -i 's/Christmas/<b>Christmas<\/b/' 7dayfcast.txt
 sed -i 's/Monday/<br><b>Monday<\/b>/' 7dayfcast.txt
 sed -i 's/Tuesday/<br><b>Tuesday<\/b>/' 7dayfcast.txt
@@ -106,47 +105,33 @@ sed -i 's/$/<br>/' 7dayfcast.txt
 ##########################################################
 
 # Get the area discussion
-cp afd-raw.txt afd.txt
-sed -i '/000/,/2020/d' afd.txt
-sed -i '/.AVIATION.../,/&&/d' afd.txt
-sed -i '/.FIRE WEATHER.../,/&&/d' afd.txt
-sed -i '/.TWC WATCHES\/WARNINGS\/ADVISORIES.../,/&&/d' afd.txt
-sed -i 's/.SYNOPSIS.../<p><b>SYNOPSIS<\/b><br>/' afd.txt
-sed -i 's/.DISCUSSION.../<\/p><p><b>DISCUSSION<\/b><br>/' afd.txt
-sed -i 's/&&/<\/p>/' afd.txt
-sed -i '/^\$\$/Q' afd.txt
-##########################################################
-
-# Get the full Fire Weather Forecast
-$wxcast text TWC FWF > fwf-raw.txt
-cp fwf-raw.txt fwf-disc.txt
-sed -i '/000/,/\+/d' fwf-disc.txt
-sed -i '/AZZ150/Q' fwf-disc.txt
-sed -e '1,4d' < fwf-disc.txt > fwf.txt
-sed -i 's/.DISCUSSION.../<b>DISCUSSION: <\/b><br>/' fwf.txt
-sed -i '$d' fwf.txt
-sed -i '$d' fwf.txt
-sed -i '$d' fwf.txt
-sed -i '$d' fwf.txt
-sed -i 's/$/<br>/' fwf.txt
+sed -n '/\.FIRE WEATHER\.\.\./,/&&/p' afd-raw.txt > afd.txt
+sed -i '$d' afd.txt
+sed -i '$d' afd.txt
+sed -i 's/^$/<br><br>/' afd.txt
+sed -i 's/\.FIRE WEATHER\.\.\.//' afd.txt
+echo -e "<\/p>" >> afd.txt
 ##########################################################
 
 # Pull out just the fire zone forecast
-sed -n '/AZZ151/,/$$/p' fwf-raw.txt > zone151.txt
-sed -i '/AZZ/,/2020/d' zone151.txt
-sed -i '/.FORECAST DAYS 3 THROUGH 7.../,$d' zone151.txt
-#sed -i '1i<pre>' zone151.txt
-sed -i 's/.TODAY.../<b>TODAY<\/b>/' zone151.txt
-sed -i 's/.TONIGHT.../<b>TONIGHT<\/b>/' zone151.txt
-sed -i 's/.SUNDAY.../<b>SUNDAY<\/b>/' zone151.txt
-sed -i 's/.MONDAY.../<b>MONDAY<\/b>/' zone151.txt
-sed -i 's/.TUESDAY.../<b>TUESDAY<\/b>/' zone151.txt
-sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone151.txt
-sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone151.txt
-sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone151.txt
-sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone151.txt
-sed -i 's/$/<br>/' zone151.txt
-#echo "</pre>" >> zone151.txt
+$wxcast text EPZ FWF > fwf-raw.txt
+sed -n '/NMZ111/,/$$/p' fwf-raw.txt > fwf.txt
+sed -i '/NMZ/,/2020/d' fwf.txt
+sed -i '/.FORECAST DAYS 3 THROUGH 5.../,$d' fwf.txt
+sed -n '/\.Today\.\.\./,/$^/p' fwf.txt > zone111.txt
+sed -i '$d' zone111.txt
+sed -i '$d' zone111.txt
+sed -i 's/.Today.../<b>TODAY<\/b>/' zone111.txt
+sed -i 's/.TONIGHT.../<b>TONIGHT<\/b>/' zone111.txt
+sed -i 's/.SUNDAY.../<b>SUNDAY<\/b>/' zone111.txt
+sed -i 's/.MONDAY.../<b>MONDAY<\/b>/' zone111.txt
+sed -i 's/.TUESDAY.../<b>TUESDAY<\/b>/' zone111.txt
+sed -i 's/.WEDNESDAY.../<b>WEDNESDAY<\/b>/' zone111.txt
+sed -i 's/.THURSDAY.../<b>THURSDAY<\/b>/' zone111.txt
+sed -i 's/.FRIDAY.../<b>FRIDAY<\/b>/' zone111.txt
+sed -i 's/.SATURDAY.../<b>SATURDAY<\/b>/' zone111.txt
+#sed -i 's/.FORECAST DAYS 3 THROUGH 5.../<b>FORECAST DAYS 3 THROUGH 5<\/b>/' zone111.txt
+sed -i 's/$/<br>/' zone111.txt
 ##########################################################
 
 # Put it all together!
@@ -175,9 +160,6 @@ echo '<p id="wwa"><div id="shadowbox"><b>REGULAR WATCHES/WARNINGS/ADVISORIES</b>
 cat wwa.txt >> DailyWeather.html
 echo "</blockquote></div></p>" >> DailyWeather.html
 
-# PUBLIC INFORMATION STATEMENT
-cat pns-notice.html >> DailyWeather.html
-
 # 7-DAY FORECAST
 echo '<p id="7day"><div id="shadowbox"><b>7-DAY FORECAST</b></br><blockquote>' >> DailyWeather.html
 cat 7dayfcast.txt >> DailyWeather.html
@@ -188,9 +170,9 @@ echo '<p id="awd"><div id="shadowbox"><b>AREA DISCUSSION</b></br><blockquote>' >
 cat afd.txt >> DailyWeather.html
 echo "</blockquote></div></p>" >> DailyWeather.html
 
-# ZONE 151 FORECAST
-echo '<p id="zone"><div id="shadowbox"><b>ZONE 151 FORECAST</b></br><blockquote>' >> DailyWeather.html
-cat zone151.txt >> DailyWeather.html
+# ZONE 111 FORECAST
+echo '<p id="zone"><div id="shadowbox"><b>ZONE 111 FORECAST</b></br><blockquote>' >> DailyWeather.html
+cat zone111.txt >> DailyWeather.html
 echo "</blockquote></div></p>" >> DailyWeather.html
 
 #
@@ -201,27 +183,9 @@ cat footer.html >> DailyWeather.html
 
 # Copy the report to a web page
 
-cp DailyWeather.html /var/www/html/firewx-ANIMAS/index.html
+cp DailyWeather.html $webhome/index.html
 ##########################################################
 
-# ASSEMBLE THE PUBLIC INFORMATION STATEMENT PAGE
-
-#
-# Headers and Menu
-cat pns-header.html > pns.html
-echo "$(TZ='America/Phoenix' date).<br><br>" >> pns.html
-echo "<span style=\"color: red;\">20-FOOT WIND FORECAST OF 'LIGHT WINDS' INDICATES MAINLY TERRAIN DRIVEN WINDS.<br><br>" >> pns.html
-echo "ZONE 151 VENTILATION CATEGORY...MIXING HEIGHT AND TRANSPORT WINDS ARE BASED ON THE BUENOS AIRES N.W.R. LOCATION (3500 MSL).</h6></br>" >> pns.html
-echo '<p id="pns"><div id="shadowbox"><b>PUBLIC INFORMATION STATEMENT</b></br><blockquote>' >> pns.html
-echo '<a href="https://w1.weather.gov/glossary/index.php?word=Public+Information+Statement" target="_blank">Definition</a><br>' >> pns.html
-echo '<pre>' >> pns.html
-cat pns.txt >> pns.html
-echo '</pre>' >> pns.html
-echo "</blockquote></div></p>" >> pns.html
-cat footer.html >> pns.html
-cp pns.html /var/www/html/firewx-ANIMAS/pns.html
-
-###########################################################
 
 # Clean up the disk space
-rm /root/firewx-ANIMAS/*.txt
+rm $dir/*.txt

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SDFD Weather Update</title>
+<title>Animas Fire Weather Update</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Fire weather update for Saint David">
-	<meta name="generator" content="SDFD FWFXCAST-V02">
+	<meta name="description" content="Fire weather update for Animas, NM">
+	<meta name="generator" content="Animas FWFXCAST-V01">
 	<meta name="author" content="Jason Todd">
 	<meta http-equiv="cache-control" content="max-age=0" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -32,13 +32,13 @@
         #shadowbox {
             border: 1px solid;
             padding: 10px;
-            box-shadow: 5px 10px red;
+            box-shadow: 5px 10px #439990;
         }
         #header {
             border: 1px solid;
             padding: 10px;
-            background-color: black;
-            color: red;
+            background-color: white;
+            color: #5b7ea6;
 	}
 	
 	img {
@@ -60,7 +60,8 @@
           margin: 0;
           padding: 0;
           overflow: hidden;
-          background-color: #333333;
+#          background-color: #333333;
+          background-color: #439990;
         }
 
         li {
@@ -88,13 +89,12 @@
        </style>
 </head>
 <body>
-<div id="header"><img style="clear: left;float: left" src="https://www.lltodd.family/firewx/SDFD-trans.jpg" height="64px"><h2>SDFD Fire Weather</h2></div>
+<div id="header"><img style="clear: left;float: left" src="https://www.lltodd.family/firewx-ANIMAS/animas-logo-2_orig.jpg" height="64px"><h2>Animas Fire & Rescue: Fire Weather Update</h2></div>
 <ul>
     <li><a href="#Prep">Prep</a></li>
     <li><a href="#Burns">Burns</a></li>
     <li><a href="#dngr">DNGR</a></li>
     <li><a href="#wwa">WWA</a></li>
-    <li><a href="#pns">PNS</a></li>
     <li><a href="#7day">7-Day</a></li>
     <li><a href="#awd">Area</a></li>
     <li><a href="#zone">Zone151</a></li>
@@ -102,7 +102,7 @@
 <h6>Information is downloaded hourly.</br>
 </br>
 This report was generated on&nbsp;
-<font color='yellow'>Sun Nov 22 07:00:09 MST 2020</font></h6>
+<font color='yellow'>Tue Nov 24 13:56:49 MST 2020</font></h6>
 <p id="prep"><div id="shadowbox"><b>WILDFIRE PREPAREDNESS LEVELS</b></br>
 <div id="prep_level"></div>
 <script type="text/javascript">
@@ -123,7 +123,7 @@ This report was generated on&nbsp;
 <p id="burns"><div id="shadowbox"><b>DAILY PRESCRIBED BURNS (STATEWIDE)</b></br>
 <div id="RX_Planned_AZ"></div>
 <script type="text/javascript">
- $.get('./Daily_RX_AZ.csv', function(data) {
+ $.get('./Daily_RX_NM.csv', function(data) {
 	var build = '<table border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0px;" width="100%" >\n';
 	var rows = data.split("\n");
 	rows.forEach( function getvalues(thisRow) {
@@ -140,119 +140,98 @@ This report was generated on&nbsp;
 <a href="https://www.lltodd.family/firewx/FireDanger.jpg" target="_blank"><img src="https://www.lltodd.family/firewx/FireDanger.jpg" width="25%"></a></br>
 Click to enlarge.</div></p>
 <p id="wwa"><div id="shadowbox"><b>REGULAR WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>
+Wind Advisory until 5 PM MST this afternoon for NMZ407-410-411-
+     413>417.
 <br></p>
-None.<br></p>
-</blockquote></div></p>
-<p id="pns"><div id="shadowbox"><b>PUBLIC INFORMATION STATEMENT</b></br><blockquote>
-<i>The statements can be long.  To view it, <a href="https:\\www.lltodd.family\firewx/pns.html">CLICK HERE</a></i>.
 </blockquote></div></p>
 <p id="7day"><div id="shadowbox"><b>7-DAY FORECAST</b></br><blockquote>
-       <b>Overnight</b><b>:</b>  Mostly cloudy. Low around 44, with temperatures rising to<br>
-                   around 48 overnight. Southeast wind around 6<br>
+  <b>This</b> <b>Afternoon</b><b>:</b>  Sunny. High near 65, with temperatures falling to around 60<br>
+                   in the afternoon. West northwest wind 15 to 24<br>
+                   mph, with gusts as high as 37 mph.<br>
+         <b>Tonight</b><b>:</b>  Mostly clear, with a low around 30. Southwest wind 5 to 13<br>
                    mph.<br>
-          <br><b>Sunday</b><b>:</b>  Mostly sunny. High near 84, with temperatures falling to<br>
-                   around 79 in the afternoon. South southeast<br>
-                   wind 6 to 12 mph.<br>
-    <br><b>Sunday</b> <b>Night</b><b>:</b>  Partly cloudy, with a low around 43. South southeast wind<br>
-                   around 9 mph.<br>
-          <br><b>Monday</b><b>:</b>  Mostly sunny, with a high near 78. South wind 7 to 21<br>
+       <br><b>Wednesday</b><b>:</b>  Sunny. High near 69, with temperatures falling to around 64<br>
+                   in the afternoon. South wind around 6 mph.<br>
+ <br><b>Wednesday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 32. West southwest wind<br>
+                   around 5 mph.<br>
+Thanksgiving <b>Day</b><b>:</b>  Sunny, with a high near 69. Southwest wind 5 to 12 mph.<br>
+  <br><b>Thursday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 31. Southwest wind around 7<br>
                    mph.<br>
-    <br><b>Monday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 36. Southwest wind 7 to 14<br>
+          <br><b>Friday</b><b>:</b>  Sunny, with a high near 61. West northwest wind 5 to 10<br>
                    mph.<br>
-         <br><b>Tuesday</b><b>:</b>  Sunny, with a high near 70.<br>
-   <br><b>Tuesday</b> <b>Night</b><b>:</b>  Clear, with a low around 32.<br>
-       <br><b>Wednesday</b><b>:</b>  Sunny, with a high near 73.<br>
- <br><b>Wednesday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 33.<br>
-<b>Thanksgiving</b <b>Day</b><b>:</b>  Sunny, with a high near 72.<br>
-  <br><b>Thursday</b> <b>Night</b><b>:</b>  Widespread frost after 3am. Mostly clear, with a low around<br>
-                   33.<br>
-          <br><b>Friday</b><b>:</b>  Widespread frost before 8am. Sunny, with a high near 64.<br>
-    <br><b>Friday</b> <b>Night</b><b>:</b>  Widespread frost after 3am. Mostly clear, with a low around<br>
-                   28.<br>
-        <br><b>Saturday</b><b>:</b>  Widespread frost before 8am. Sunny, with a high near 62.<br>
+    <br><b>Friday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 26. North northeast wind<br>
+                   around 7 mph.<br>
+        <br><b>Saturday</b><b>:</b>  Sunny, with a high near 60. East northeast wind around 7<br>
+                   mph.<br>
+  <br><b>Saturday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 25.<br>
+          <br><b>Sunday</b><b>:</b>  Sunny, with a high near 62.<br>
+    <br><b>Sunday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 28.<br>
+          <br><b>Monday</b><b>:</b>  Sunny, with a high near 62.<br>
+    <br><b>Monday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 26.<br>
 </blockquote></div></p>
 <p id="awd"><div id="shadowbox"><b>AREA DISCUSSION</b></br><blockquote>
 
-
-<p><b>SYNOPSIS</b><br>Temperatures will continue well above average to start
-the new week. A weather system brushing by to our north will bring
-some cooling Tuesday with another system bringing additional
-cooling Friday. Breezy at times with these systems, but precip
-chances are low for the southeast corner of the state..
-
-</p>
-
-</p><p><b>DISCUSSION</b><br>One more day with near record afternoon highs as a
-shortwave ridge phases with the northern remains of the strong
-high pressure now anchored in Mexico. A trough will push through
-the region Monday with most of the cooling in SE AZ trailing the
-rest of the state into Tuesday. Breezy conditions but limited
-moisture this far south.
-
-A shortwave ridge Wednesday will push temperatures up a few
-degrees, but a deeper split in the flow later in the week will not
-give much time to warm up again. Ensembles argue for a significant
-weakness over the desert southwest late next week. Much cooler
-temperatures a sure bet, falling below seasonal averages for a 
-brief period Friday through next weekend. Gusty winds at times,
-but a split with a dry inland trajectory like this one looks to 
-be usually doesn't have time to tap into much moisture. As long as
-it doesn't get cut off and left behind, precip chances will again
-be minimal this far south.
-
-</p>
-
-
-
-
+An upper level system passing through today will briefly create 
+elevated fire weather concerns this afternoon. 20 foot winds will 
+meet critical thresholds around 20-25mph with higher gusts expected. 
+RHs values will be borderline as dewpoints will start to drop by mid-
+day. Min RHs look to stay around 16-20% for most locations; however, 
+a few spots in fire zones NM 111/112 and TX 055 may reach critical 
+levels of 15% for an hour or two in the afternoon. 
+<br><br>
+Winds are expected to be lighter Wednesday and Thursday, though a 
+few afternoon breezes will still be possible. Min RHs will be 
+between 13-18% across most of the lowlands, with Thursday being the 
+driest day. Another storm system will skirt past the Borderland for 
+the end of the week increasing RH values and potentially creating a 
+slight chance for scattered showers. Vent rates will be excellent 
+today but will diminish to poor to fair for the rest of the week.
+<\/p>
 </blockquote></div></p>
-<p id="zone"><div id="shadowbox"><b>ZONE 151 FORECAST</b></br><blockquote>
-<br>
+<p id="zone"><div id="shadowbox"><b>ZONE 111 FORECAST</b></br><blockquote>
 <b>TODAY</b><br>
-* Sky/Weather..............Mostly cloudy then becoming partly <br>
-  cloudy. <br>
-* Max Temperature..........76 to 86 degs. <br>
-*    24 hr Trend...........Little change. <br>
-* Min Humidity.............16 to 26 pct. <br>
-*    24 hr Trend...........Down 3 to 7 pct. <br>
-* Wind (20 ft/10-min avg)..Southeast around 10 mph. <br>
-* 10000 ft MSL Wind........South 10 to 15 mph. <br>
-* Chance of Precip.........0 pct. <br>
-* LAL......................1. <br>
-* Haines Index.............5 or moderate. <br>
-* Mixing Height............6007 ft agl. <br>
-* Transport Winds..........Southeast 9 to 11 knots. <br>
-* Ventilation Category.....Good (66077 knot-ft). <br>
+* Sky/weather.........Mostly sunny (5-15 percent). Patchy blowing <br>
+                      dust. <br>
+* Max temperature.....61-65. <br>
+*    24 hr trend......10 degrees cooler. <br>
+* Min humidity........14-18 percent. <br>
+*    24 hr trend......Unchanged. <br>
+* 20-foot winds.......Breezy. West winds 20 to 25 mph. <br>
+* 10000 ft MSL winds..West 38 mph. <br>
+* Chc of precip.......0 percent. <br>
+* LAL.................1. <br>
+* Haines index........4. <br>
+* Mixing height.......1600 ft AGL increasing to 6000 ft AGL in the <br>
+                      afternoon. <br>
+* Transport winds.....West around 30 knots. <br>
+* Vent category.......Excellent (204000 knot-ft). <br>
 <br>
 <b>TONIGHT</b><br>
-* Sky/Weather..............Partly cloudy. <br>
-* Min Temperature..........44 to 54 degs. <br>
-*    24 hr Trend...........Down 1 to 4 degs. <br>
-* Max Humidity.............61 to 71 pct. <br>
-*    24 hr Trend...........Up 3 to 6 pct. <br>
-* Wind (20 ft/10-min avg)..South around 10 mph. <br>
-* 10000 ft MSL Wind........South around 20 mph increasing to around <br>
-  30 mph after midnight. <br>
-* Chance of Precip.........0 pct. <br>
-* LAL......................1. <br>
-* Haines Index.............4 or low. <br>
+* Sky/weather.........Clear (5-15 percent). <br>
+* Min temperature.....30-35. <br>
+*    24 hr trend......9 degrees cooler. <br>
+* Max humidity........51-56 percent. <br>
+*    24 hr trend......8 percent drier. <br>
+* 20-foot winds.......Northwest winds around 15 mph decreasing to <br>
+                      around 5 mph after midnight. <br>
+* 10000 ft MSL winds..West 24 mph. <br>
+* Chc of precip.......0 percent. <br>
+* LAL.................1. <br>
+* Haines index........4. <br>
 <br>
-<b>MONDAY</b><br>
-* Sky/Weather..............Partly cloudy. <br>
-* Max Temperature..........69 to 79 degs. <br>
-*    24 hr Trend...........Down 5 to 9 degs. <br>
-* Min Humidity.............17 to 27 pct. <br>
-*    24 hr Trend...........Little change. <br>
-* Wind (20 ft/10-min avg)..South 15 to 20 mph. <br>
-* 10000 ft MSL Wind........Southwest 30 to 35 mph. <br>
-* Chance of Precip.........0 pct. <br>
-* LAL......................1. <br>
-* Haines Index.............4 or low. <br>
-* Mixing Height............6134 ft agl. <br>
-* Transport Winds..........South 20 knots increasing to southwest <br>
-  31 knots in the afternoon. <br>
-* Ventilation Category.....Excellent (190154 knot-ft). <br>
-<br>
+<b>WEDNESDAY</b><br>
+* Sky/weather.........Mostly sunny (10-20 percent). <br>
+* Max temperature.....63-68. <br>
+* Min humidity........14-18 percent. <br>
+* 20-foot winds.......Southwest winds 5 to 10 mph. <br>
+* 10000 ft MSL winds..West 22 mph. <br>
+* Chc of precip.......0 percent. <br>
+* LAL.................1. <br>
+* Haines index........4. <br>
+* Mixing height.......1100 ft AGL increasing to 3800 ft AGL in the <br>
+                      afternoon. <br>
+* Transport winds.....West around 15 knots. <br>
+* Vent category.......Fair (44200 knot-ft). <br>
 </blockquote></div></p>
 <div id="footer">
 <footer>
