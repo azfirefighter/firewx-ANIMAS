@@ -156,7 +156,7 @@ echo '<a href="https://www.lltodd.family/firewx/FireDanger.jpg" target="_blank">
 echo 'Click to enlarge.</div></p>' >> DailyWeather.html
 
 # TWC WATCHES/WARNINGS/ADVISORIES
-echo '<p id="wwa"><div id="shadowbox"><b>REGULAR WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>' >> DailyWeather.html
+echo '<p id="wwa"><div id="shadowbox"><b>WATCHES/WARNINGS/ADVISORIES</b></br><blockquote>' >> DailyWeather.html
 cat wwa.txt >> DailyWeather.html
 echo "</blockquote></div></p>" >> DailyWeather.html
 
