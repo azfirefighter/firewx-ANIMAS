@@ -1,7 +1,7 @@
 #!/bin/bash
-url="https://www.lltodd.family/firewx-ANIMAS"
-email="jake@lltodd.family"
-from="weather-noreply@www.lltodd.family"
+url=""
+email=""
+from=""
 
 logger "Emailing morning fire weather briefing."
 
