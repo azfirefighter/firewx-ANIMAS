@@ -209,4 +209,4 @@ rm $dir/DailyWeather.html
 
 
 # Clean up the disk space
-#rm $dir/*.txt
+rm $dir/*.txt
