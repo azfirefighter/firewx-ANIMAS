@@ -44,9 +44,9 @@ elif [ $day = "Sat" ]; then
 fi
 
 # Get daily Southwest Area Fire Danger and other info from the SWCC
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/F_01_50_Daily_Fire_Danger_DISPATCH.jpg -O /var/www/html/firewx-ANIMAS/FireDanger.jpg
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O /var/www/html/firewx-ANIMAS/A_01_10_PREPAREDNESS_LEVEL.csv
-wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_02_30_Daily_RX_NM_Website.csv -O /var/www/html/firewx-ANIMAS/Daily_RX_NM.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/F_01_50_Daily_Fire_Danger_DISPATCH.jpg -O $webhome/FireDanger.jpg
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/A_01_10_PREPAREDNESS_LEVEL.csv -O $webhome/SW_Wildfire_Prep.csv
+wget https://gacc.nifc.gov/swcc/predictive/intelligence/daily/UPLOAD_Files_toSWCC/G_02_30_Daily_RX_NM_Website.csv -O $webhome/Daily_RX_NM.csv
 ##########################################################
 
 # REGULAR WATCHES / WARNINGS / ADVISORIES
@@ -198,6 +198,7 @@ cat footer.html >> DailyWeather.html
 # Copy the report to a web page
 
 cp DailyWeather.html $webhome/index.html
+rm $dir/DailyWeather.html
 ##########################################################
 
 
