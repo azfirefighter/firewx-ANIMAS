@@ -1,0 +1,24 @@
+<b>Thanksgiving</b <b>Day</b><b>:</b>  Sunny. High near 68, with temperatures falling to around 63<br>
+                   in the afternoon. Southwest wind 6 to 12<br>
+                   mph.<br>
+         <b>Tonight</b><b>:</b>  Mostly clear, with a low around 33. South southwest wind<br>
+                   around 9 mph.<br>
+          <br><b>Friday</b><b>:</b>  Sunny. High near 61, with temperatures falling to around 56<br>
+                   in the afternoon. West wind 7 to 12 mph.<br>
+    <br><b>Friday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 25. Northeast wind 5 to 8<br>
+                   mph.<br>
+        <br><b>Saturday</b><b>:</b>  Sunny, with a high near 57. East wind 5 to 9 mph.<br>
+  <br><b>Saturday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 24. East southeast wind<br>
+                   around 5 mph.<br>
+          <br><b>Sunday</b><b>:</b>  Sunny, with a high near 63. East wind 5 to 13 mph, with gusts<br>
+                   as high as 20 mph.<br>
+    <br><b>Sunday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 29. East southeast wind<br>
+                   around 15 mph, with gusts as high as 23<br>
+                   mph.<br>
+          <br><b>Monday</b><b>:</b>  Mostly sunny, with a high near 57. East southeast wind 12 to<br>
+                   18 mph, with gusts as high as 28 mph.<br>
+    <br><b>Monday</b> <b>Night</b><b>:</b>  Partly cloudy, with a low around 25.<br>
+         <br><b>Tuesday</b><b>:</b>  Sunny, with a high near 63.<br>
+   <br><b>Tuesday</b> <b>Night</b><b>:</b>  Mostly clear, with a low around 27.<br>
+       <br><b>Wednesday</b><b>:</b>  Sunny, with a high near 59.<br>
+ <br><b>Wednesday</b> <b>Night</b><b>:</b>  Partly cloudy, with a low around 24.<br>

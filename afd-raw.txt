@@ -1,0 +1,190 @@
+
+000
+FXUS64 KEPZ 261148
+AFDEPZ
+
+Area Forecast Discussion
+National Weather Service El Paso TX/Santa Teresa NM
+448 AM MST Thu Nov 26 2020
+
+.AVIATION...12Z TAF CYCLE
+VFR conditions through the period with SKC-SCT250. Surface winds 
+becoming west southwest 9-13KTS after 18z. LLWS possible through 
+15Z over the Sacramento Mtns... 260/35KTS at around 2000-3000 ft 
+AGL.
+
+
+&&
+
+.PREV DISCUSSION...220 AM MST Thu Nov 26 2020...
+
+.SYNOPSIS...
+Thanksgiving will be the Borderland's last abnormally warm day of
+the forecast period before the weather pattern becomes much more 
+active. The first weather system will skirt by the area Friday 
+into Saturday bringing an increase in wind, a drop in 
+temperatures, and a slight chance of rain and snow showers for far
+northern and higher terrain locations. A dry backdoor cold front 
+will then push in Sunday evening with stronger winds, putting a 
+cap on our high temperatures. Monday and Tuesday look to be mostly
+quiet before the next potential weather system sets its sights on
+the Borderland.
+
+&&
+
+.DISCUSSION...
+.SHORT TERM...Today (Thanksgiving Day) and Tonight...
+A dry west to southwest flow pattern aloft will occur ahead of an 
+approaching low pressure system. The atmosphere remains very dry 
+with just a few high level clouds passing over the area. Day time 
+temperatures will be a few degrees warmer today as result with after 
+noon highs as much as 10 degrees above normal. Surface winds will be 
+from the west south west with at 10 to 20 mph with high gusts along 
+east slopes in the afternoon. The southwest flow will continue 
+overnight with mild overnight temperatures expected.  The 
+approaching weather system will drop into Arizona tonight and will 
+move east into New Mexico and impact the area with a mix of weather 
+on Friday. 
+
+&&
+
+.LONG TERM...Friday through Thursday...
+Friday morning starts off with a backdoor front nudging into the
+eastern CWA, as well an upper level low dropping down into New
+Mexico. These two systems will briefly butt heads and cause a
+split in low level flow across the Borderland. The backdoor
+front's forward progression will be halted along or just east of 
+the Rio Grande valley by mid-day Friday. Meanwhile, the upper 
+level low will continue to churn to the east while dragging a 
+Pacific front in from the west. The backdoor front will create 
+breezy easterly winds for locations east of the Rio Grande, while 
+the Pacific front and upper level system will produce gusty 
+westerly winds for the rest of the area. In more simple terms, it
+will be breezy on Friday, but the direction that the breezes are 
+coming from will depend upon which half of the CWA you're located 
+in. Additionally, as this system pushes through the state, most of
+the moisture associated with it will be within the center of the 
+low and to the north. Since the center will be tracking right 
+along the northern boundary of the CWA, parts of the Gila region, 
+northern Sierra County, and the Sacramento Mountains may see a 
+brief chance at some precipitation Friday evening and into the 
+overnight hours. Snow levels will drop to about 6000 feet, so the 
+higher terrain of these highlighted locations will likely see some
+snow showers. Since very low dewpoints indicate there won't be 
+much moisture to work with in the first place, don't expect 
+accumulation to be much of anything--maybe an inch in the highest
+parts of the Sacs.
+
+This system will exit the area Saturday morning leaving us in a
+northerly flow pattern. This will cause high temperatures to
+struggle to reach the upper 50s, which is finally a few degrees below
+normal for this time of year. (Hopefully we've finally left these
+abnormally warm temperatures we've been seeing in the dust.)
+Sunday will start off as a calm and pleasant day, but that will
+change throughout the afternoon as a second, more potent backdoor
+cold front pushes in. Easterly winds look to become quite strong,
+particularly across the Otero Mesa, Hudspeth, and eastern El Paso
+Counties. By midnight Monday morning, the GFS has 35-45 knots at
+850mb for these locations, as well as along and south of the I-10
+corridor, with a secondary bullseye of strong winds out by
+Lordsburg. Expect the winds to start dying down by late morning as
+the pressure gradient loosens. The exact timing of the frontal
+passage will determine high temps for Sunday, but for now, expect
+most everyone to warm up into the lower 60s. The cooler air will
+filter in behind the front on Monday capping highs in the mid to
+upper 50s. 
+
+The first day of December looks to be rather benign for now as
+northwesterly flow persists aloft. Temperatures will top out right
+around normal and winds will be light. Beyond Tuesday afternoon is
+when confidence starts to lower thanks to models diverging on
+their solutions for our next potential weather system. Both the 
+GFS and the ECMWF have a cutoff upper low dropping down somewhere 
+in the Four Corners region Tuesday night. Both models also have a 
+side door cold front pushing in ahead of the system during this 
+time turning winds northerly. This would create a funneling effect
+and thus stronger winds in north-south oriented canyons and 
+valleys. Moving forward into Wednesday morning is where the models
+split -- the ECMWF pivots the low around northeastern New Mexico 
+and kicks it out the door into the Plains pretty quickly. The 
+only impact for us in that scenario would be gusty winds and maybe
+an increase in high clouds. However, the GFS now wants to take 
+the cutoff low on a detour through eastern Arizona before slowly 
+swinging it right over the Borderland on Thursday. If this 
+solution is correct, it would create more widespread 
+precipitation, much cooler temperatures, and perhaps even a decent
+chance at snow for a fair amount of people. But before we get 
+ahead of ourselves, it's important to realize that this is 
+pushing seven to eight days away from now, so honestly, who knows 
+what will happen. We'll have to keep watching and cross our 
+fingers for any chance of precipitation that we can get. 
+
+&&
+
+.FIRE WEATHER...
+Dry and warm west southwest flow will occur over the region today 
+and tonight with an approaching storm system moving into the area on 
+Friday.  The system will bring a mix of rain and high elevation snow 
+to the mountains Friday and Friday night, but accumulations will be 
+light. Lowland desert regions along the border will see dry and 
+somewhat breezy conditions as a front pushes into the area. Overall 
+fire impacts today will be minimal with low relative humidity values 
+in the teens, with wind speeds expected to remain below criteria. 
+Winds increase on Friday but so do relative humidity values as a 
+result of cooler temperatures.  Vent rates will be poor to good 
+today with some improvement along the Rio Grande Valley for Friday. 
+Temperatures will continue to drop going into next week to about 5 
+to 10 degrees below normal with little to no precipitation. 
+
+&&
+
+&&
+
+.PRELIMINARY POINT TEMPS/POPS...
+El Paso                 71  41  64  35 /   0   0   0   0 
+Sierra Blanca           69  39  59  30 /   0   0   0   0 
+Las Cruces              67  34  61  29 /   0   0   0   0 
+Alamogordo              66  34  62  29 /   0   0   0  20 
+Cloudcroft              46  23  39  18 /   0   0  10  20 
+Truth or Consequences   66  34  58  32 /   0   0  20  20 
+Silver City             59  35  52  29 /   0   0  10   0 
+Deming                  68  30  61  27 /   0   0   0   0 
+Lordsburg               66  32  59  25 /   0   0   0   0 
+West El Paso Metro      69  44  63  37 /   0   0   0   0 
+Dell City               71  33  59  28 /   0   0   0   0 
+Fort Hancock            75  39  69  30 /   0   0   0   0 
+Loma Linda              63  40  56  33 /   0   0   0   0 
+Fabens                  71  40  65  33 /   0   0   0   0 
+Santa Teresa            68  36  61  30 /   0   0   0   0 
+White Sands HQ          67  41  60  34 /   0   0   0   0 
+Jornada Range           66  35  59  30 /   0   0   0   0 
+Hatch                   67  32  61  28 /   0   0   0   0 
+Columbus                70  36  64  30 /   0   0   0   0 
+Orogrande               67  36  60  31 /   0   0   0   0 
+Mayhill                 59  25  45  23 /   0   0   0  20 
+Mescalero               55  24  48  20 /   0   0  20  30 
+Timberon                53  26  46  20 /   0   0   0  20 
+Winston                 60  23  51  19 /   0   0  20  20 
+Hillsboro               65  30  59  25 /   0   0  10  10 
+Spaceport               65  33  59  29 /   0   0  10  10 
+Lake Roberts            58  29  52  22 /   0   0  20  10 
+Hurley                  62  29  55  23 /   0   0   0   0 
+Cliff                   64  32  58  27 /   0   0  10   0 
+Mule Creek              58  32  52  27 /   0   0  20   0 
+Faywood                 63  34  56  28 /   0   0   0   0 
+Animas                  68  33  61  25 /   0   0   0   0 
+Hachita                 68  30  61  24 /   0   0   0   0 
+Antelope Wells          68  34  63  26 /   0   0   0   0 
+Cloverdale              63  35  56  29 /   0   0   0   0 
+
+&&
+
+.EPZ WATCHES/WARNINGS/ADVISORIES...
+NM...None.
+TX...None.
+&&
+
+$$
+
+04-Lundeen
+

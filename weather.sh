@@ -57,6 +57,13 @@ sed -i '1d' wwa-raw.txt
 sed -i '$d' wwa-raw.txt
 sed -i '$d' wwa-raw.txt
 sed -i 's/NM\.\.\.//' wwa-raw.txt
+	# *** Ugly hack because the NWS isn't standardized across offices. ***
+	wwa=$(cat wwa-raw.txt)
+	if [ -z $wwa ]
+	then
+		echo -e "None." > wwa-raw.txt
+	fi
+	# *** End ugly hack. ***
 cp wwa-raw.txt wwa.txt
 ##########################################################
 
@@ -89,7 +96,7 @@ sed -i 's/Valentines/<b>Valentines<\/b/' 7dayfcast.txt
 sed -i 's/New Year/<b>New Year<\/b/' 7dayfcast.txt
 sed -i 's/Halloween/<b>Halloween<\/b/' 7dayfcast.txt
 sed -i 's/Easter/<b>Easter<\/b/' 7dayfcast.txt
-sed -i 's/Thanksgiving Day/<b>Thanksgiving Day<\/b/' 7dayfcast.txt
+sed -i 's/Thanksgiving/<b>Thanksgiving<\/b/' 7dayfcast.txt
 sed -i 's/Christmas/<b>Christmas<\/b/' 7dayfcast.txt
 sed -i 's/Monday/<br><b>Monday<\/b>/' 7dayfcast.txt
 sed -i 's/Tuesday/<br><b>Tuesday<\/b>/' 7dayfcast.txt
@@ -107,7 +114,6 @@ sed -i '$d' afd.txt
 sed -i '$d' afd.txt
 sed -i 's/^$/<br><br>/' afd.txt
 sed -i 's/\.FIRE WEATHER\.\.\.//' afd.txt
-echo -e "<\/p>" >> afd.txt
 ##########################################################
 
 # Pull out just the fire zone forecast
@@ -203,4 +209,4 @@ rm $dir/DailyWeather.html
 
 
 # Clean up the disk space
-rm $dir/*.txt
+#rm $dir/*.txt

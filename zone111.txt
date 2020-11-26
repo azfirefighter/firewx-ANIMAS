@@ -1,0 +1,42 @@
+<br>
+.<b><b>TODAY</b></b>...<br>
+* Sky/weather.........Mostly sunny (10-20 percent). <br>
+* Max temperature.....64-68. <br>
+*    24 hr trend......Unchanged. <br>
+* Min humidity........13-17 percent. <br>
+*    24 hr trend......Unchanged. <br>
+* 20-foot winds.......West winds 10 to 15 mph. <br>
+* 10000 ft MSL winds..West 26 mph. <br>
+* Chc of precip.......0 percent. <br>
+* LAL.................1. <br>
+* Haines index........4. <br>
+* Mixing height.......1200 ft AGL increasing to 4700 ft AGL in the <br>
+                      afternoon. <br>
+* Transport winds.....West around 20 knots. <br>
+* Vent category.......Good (91500 knot-ft). <br>
+<br>
+.<b>TO<b>NIGHT</b></b>...<br>
+* Sky/weather.........Mostly clear (15-25 percent). <br>
+* Min temperature.....31-36. <br>
+*    24 hr trend......3 degrees warmer. <br>
+* Max humidity........56-61 percent. <br>
+*    24 hr trend......1 percent wetter. <br>
+* 20-foot winds.......Southwest winds around 10 mph. <br>
+* 10000 ft MSL winds..Southwest 31 mph. <br>
+* Chc of precip.......0 percent. <br>
+* LAL.................1. <br>
+* Haines index........3. <br>
+<br>
+.<b>FRIDAY</b>...<br>
+* Sky/weather.........Mostly sunny (20-30 percent). <br>
+* Max temperature.....58-62. <br>
+* Min humidity........17-21 percent. <br>
+* 20-foot winds.......Southwest winds around 10 mph. <br>
+* 10000 ft MSL winds..Southwest 31 mph. <br>
+* Chc of precip.......0 percent. <br>
+* LAL.................1. <br>
+* Haines index........4. <br>
+* Mixing height.......1500 ft AGL increasing to 5000 ft AGL in the <br>
+                      afternoon. <br>
+* Transport winds.....West around 15 knots. <br>
+* Vent category.......Good (78000 knot-ft). <br>
